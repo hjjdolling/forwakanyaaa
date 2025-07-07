@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun, Sayang!</title>
+    <style>
+        body {
+            background: #ffe4ec;
+            color: #d63384;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+            background: #fff0f6;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(214,51,132,0.08);
+            padding: 32px 24px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 0.3em;
+            color: #d63384;
+        }
+        p {
+            font-size: 1.15em;
+            margin-bottom: 1.5em;
+            color: #a61e4d;
+        }
+        .photos {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 1.5em;
+            flex-wrap: wrap;
+        }
+        .photos img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 3px solid #f783ac;
+            box-shadow: 0 2px 8px rgba(214,51,132,0.10);
+            background: #fff;
+        }
+        .love {
+            font-size: 2em;
+            color: #fa4eab;
+            margin-bottom: 0.5em;
+        }
+        .secret-btn {
+            background: #fa4eab;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            padding: 10px 22px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-bottom: 1em;
+            transition: background 0.2s;
+        }
+        .secret-btn:hover {
+            background: #d63384;
+        }
+        .secret-message {
+            display: none;
+            margin-top: 1em;
+            background: #fff0f6;
+            border-radius: 12px;
+            padding: 16px;
+            color: #a61e4d;
+            font-style: italic;
+            box-shadow: 0 2px 8px rgba(214,51,132,0.08);
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 18px 6px;
+            }
+            .photos img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="love">💖</div>
+        <h1>Selamat Ulang Tahun, Cintaku!</h1>
+        <p>
+           You are the most beautiful person in my life.
+Today and every day, I celebrate you and the love we share.
+Wishing you a day as wonderful as you are!
+tetaplah semangat dalam proses yang lama ini,jangan pernah menyerah
+terus melangkah maju sampai kamu menemukan bukti yang kamu mau. Terima kasih sudah menjadi bagian terindah dalam hidupku. Aku selalu sayang kamu, hari ini dan selamanya!
+        </p>
+        <div class="photos">
+            <img src="foto1.jpg" alt="Foto bersama 1">
+            <img src="foto2.jpg" alt="Foto bersama 2">
+            <img src="foto3.jpg" alt="Foto bersama 3">
+        </div>
+        <p>
+            Teruslah tersenyum dan jadi diri sendiri.Tak perlu dengarkan suara angin. <br>
+            <strong>Selamat berjuang, my 18 y.o princess 💕</strong>
+        </p>
+        <button class="secret-btn" onclick="document.querySelector('.secret-message').style.display='block'; this.style.display='none';">
+            Tampilkan Secret Message
+        </button>
+        <div class="secret-message">
+           "Aku tak perlu menamai rasa ini, sebab ia tumbuh seperti akar di tanah yang diam-diam merindukan hujan tanpa suara, tapi pasti.
+Kita bukan cerita yang diceritakan keras-keras, melainkan sajak yang dibisikkan angin kepada daun yang tak sempat gugur karena ingin tinggal sedikit lebih lama."
+- forever. 💗
+        </div>
+    </div>
+</body>
+</html>
